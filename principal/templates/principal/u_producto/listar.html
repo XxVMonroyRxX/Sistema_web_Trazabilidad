@@ -1,0 +1,57 @@
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Tabla  {{ titulo }}</h1>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Listado de  {{ titulo }}
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Fecha de Caducidad</th>
+                                            <th>Categoria material peligroso</th>
+                                            <th>Subproducto</th>                                             <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Fecha de Caducidad</th>
+                                            <th>Categoria material peligroso</th>
+                                            <th>Subproducto</th>                                             <th>Acciones</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        {% for data in dataset %}
+                                        <tr>
+                                            <td>{{data.id}}</td>
+                                            <td>{{data.nombre}}</td>
+                                            <td>{{data.fecha_caducidad}}</td>
+                                            <td>{{data.cat_material_peligro}}</td>
+                                            <td>{{data.u_sub_producto}}</td>
+                    <td>
+            <a href="u_producto/visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
+           <a href="u_producto/actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
+         <a href="u_producto/eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
+                                        </tr>
+                                          {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+               
+                    </div>
+                </footer>
+            </div>

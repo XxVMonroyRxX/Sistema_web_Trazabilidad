@@ -1,0 +1,51 @@
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Tabla  {{ titulo }}</h1>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Listado de  {{ titulo }}
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Estado</th>
+                                            <th>Fecha de conexion</th>                                        <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Estado</th>
+                                            <th>Fecha de conexion</th>                                            <th>Acciones</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        {% for data in dataset %}
+                                        <tr>
+                                            <td>{{data.id}}</td>
+                                            <td>{{data.estado}}</td>
+                                            <td>{{data.fecha_conexion}}</td>
+                                                     <td>
+            <a href="sesiones/visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
+           <a href="sesiones/actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
+         <a href="sesiones/eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
+                                        </tr>
+                                             {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+               
+                    </div>
+                </footer>
+            </div>
