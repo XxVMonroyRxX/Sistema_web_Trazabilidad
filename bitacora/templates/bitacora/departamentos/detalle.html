@@ -1,0 +1,28 @@
+{%load crispy_forms_tags %}
+{%block contenido%}
+
+
+<div class="main">
+    <!-- Create a Form -->
+
+        {% if accion == 'Actualizacion' %}
+    <form method="POST"  action="{% url 'actualizar_departamento'  obj.id %}">
+        {% csrf_token %}
+       {{ form|crispy }}
+        <input type="submit" value="Actualizar">
+{% endif %}
+        {% if accion == 'Creacion'  %}
+                    <form method="POST"  action="{% url 'crear_departamentos' %}">
+        {% csrf_token %}
+       {{ form|crispy }}
+        <input type="submit" value="Crear">
+{% endif %}
+        {% if accion == 'Visualizacion' %}
+
+       {{ form|crispy }}
+        <input type="submit" value="Regresar">
+{% endif %}
+    </form>
+
+</div>
+{%endblock contenido%}
