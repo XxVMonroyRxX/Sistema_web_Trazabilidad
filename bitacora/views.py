@@ -8,6 +8,7 @@ import datetime
 import logging
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,authenticate,logout
+from django.core.files.storage import FileSystemStorage
 
 
 logger = logging.getLogger(__name__)
@@ -284,7 +285,9 @@ def visualizar_u_sub_producto(request, id):
     context ={}
     context["titulo"] = "U_Sub_Productos"
     context["accion"] = "Visualizacion"
+    obj = get_object_or_404(USubProducto, id = id)
     context["data"] = USubProducto.objects.get(id = id)
+    context["form"] = USubProductoForm(request.POST or None,instance=obj)
     return render(request, "bitacora/u_sub_producto/detalle.html", context)
 @login_required(login_url='login')
 def crear_u_sub_producto(request):
@@ -302,7 +305,7 @@ def crear_u_sub_producto(request):
                 form.save()
                 logger.warning('Subproducto ha sido creado de manera exitosa.')
                 messages.success(request, 'Subproducto ha sido creado de manera exitosa.')
-                return redirect('u_sub_productos')
+                return redirect('listar_u_sub_producto')
             else:
                 logger.warning('Se generaron errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -319,11 +322,16 @@ def eliminar_u_sub_producto(request, id):
     context ={}
     context["titulo"] = "U_Sub_Productos"
     obj = get_object_or_404(USubProducto, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         logger.warning(f'Sub Producto {id} eliminado de manera exitosa.')
         messages.success(request, f'Sub Producto {id} eliminado de manera exitosa.')
-        return HttpResponseRedirect("/")
+        return redirect("listar_u_sub_producto")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'El U_Sub_Produto {id} no se pudo eliminarse..')
+    return render(request, "bitacora/u_sub_producto/listar.html", context)
+
     return render(request, "bitacora/u_sub_producto/listar.html", context)
 @login_required(login_url='login')
 def actualizar_u_sub_producto(request, id):
@@ -334,22 +342,45 @@ def actualizar_u_sub_producto(request, id):
     obj = get_object_or_404(USubProducto, id = id)
     form = USubProductoForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
-        return render(request, "bitacora/u_sub_productos/detalle.html", context)
+        return render(request, "bitacora/u_sub_producto/detalle.html", context)
     elif request.method == 'POST':
         try:
             if form.is_valid():
                 form.save()
                 logger.warning(f'El subproducto {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'El subproducto {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("/"+id)
+                return redirect("listar_u_sub_producto")
             else:
                 logger.warning(f'Se ha generado un error de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
-                return render(request, "bitacora/u_sub_productos/detalle.html", {'context':context,'form':form})
+                return render(request, "bitacora/u_sub_producto/detalle.html", {'context':context,'form':form})
         except:
             logger.warning(f'Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @login_required(login_url='login')
 def listar_cat_mat_peligroso(request):
     logger.warning('Se ejecuta la funcion listar_cat_mat_peligroso a las  '+str(datetime.datetime.now())+' horas!')
@@ -363,7 +394,9 @@ def visualizar_cat_mat_peligroso(request, id):
     context ={}
     context["titulo"] = "Cat_Mat_Peligrosos"
     context["accion"] = "Visualizacion"
+    obj = get_object_or_404(CatMatPeligroso, id = id)
     context["data"] = CatMatPeligroso.objects.get(id = id)
+    context["form"] = CatMatPeligrosoForm(request.POST or None, instance = obj)
     return render(request, "bitacora/cat_mat_peligroso/detalle.html", context)
 @login_required(login_url='login')
 def crear_cat_mat_peligroso(request):
@@ -378,11 +411,20 @@ def crear_cat_mat_peligroso(request):
     elif request.method == 'POST':
         try:
             if form.is_valid():
-                form.save()
+                cat_mat_categoria_temporal = form.save(commit=False)
+
+                if request.FILES.get('ficha_seguridad') is not None:
+                    myfile = request.FILES.get('ficha_seguridad')
+                    fs = FileSystemStorage()
+                    filename = fs.save(myfile.name, myfile)
+                    uploaded_file_url = fs.url(filename)
+                    cat_mat_categoria_temporal.ficha_seguridad = uploaded_file_url
+                cat_mat_categoria_temporal.save()
                 logger.warning('Categoria material peligroso ha sido creado de manera exitosa.')
                 messages.success(request, 'Categoria material peligroso ha sido creado de manera exitosa.')
-                return redirect('cat_mat_peligroso')
+                return redirect('listar_cat_mat_peligroso')
             else:
+                print("Si es valida 5")
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
                 return render(request, "bitacora/cat_mat_peligroso/detalle.html", {'context':context,'form':form})
@@ -395,11 +437,14 @@ def eliminar_cat_mat_peligroso(request, id):
     context ={}
     context["titulo"] = "Cat_Mat_Peligrosos"
     obj = get_object_or_404(CatMatPeligroso, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         logger.warning(f'Cat Mat Peligroso {id} eliminado de manera exitosa.')
         messages.success(request, f'Cat Mat Peligroso {id} eliminado de manera exitosa.')
-        return HttpResponseRedirect("/")
+        return redirect("listar_cat_mat_peligroso")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'El Cat Mat peligroso {id} no pudo eliminarse..')
     return render(request, "bitacora/cat_mat_peligroso/listar.html", context)
 @login_required(login_url='login')
 def actualizar_cat_mat_peligroso(request, id):
@@ -410,6 +455,7 @@ def actualizar_cat_mat_peligroso(request, id):
     obj = get_object_or_404(CatMatPeligroso, id = id)
     form = CatMatPeligrosoForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
         return render(request, "bitacora/cat_mat_peligroso/detalle.html", context)
     elif request.method == 'POST':
@@ -418,7 +464,7 @@ def actualizar_cat_mat_peligroso(request, id):
                 form.save()
                 logger.warning( f'Categoria Mat Peligroso {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'Categoria Mat Peligroso {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("/"+id)
+                return redirect("listar_cat_mat_peligroso")
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -426,6 +472,29 @@ def actualizar_cat_mat_peligroso(request, id):
         except:
             logger.warning( 'Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @login_required(login_url='login')
 def listar_reg_almacen(request):
@@ -603,6 +672,9 @@ def visualizar_departamentos(request, id):
     context["titulo"] = "Departamentos"
     context["accion"] = "Visualizacion"
     context["data"] = Departamentos.objects.get(id = id)
+    obj = get_object_or_404(Departamentos, id = id)
+    context["form"] = DepartamentosForm(request.POST or None, instance = obj)
+
     return render(request, "bitacora/departamentos/detalle.html", context)
 
 @login_required(login_url='login')
@@ -640,13 +712,13 @@ def eliminar_departamentos(request, id):
         obj.delete()
         logger.warning(f'Departamento {id} eliminado de manera exitosa.')
         messages.success(request, f'Departamento {id} eliminado de manera exitosa.')
-        return HttpResponseRedirect("listar_departamentos")
+        return redirect("listar_departamentos")
     except:
         logger.warning(f'No se pudo eliminar.')
         messages.success(request, f'El departamento {id} no se pudo eliminarse..')
     return render(request, "bitacora/departamentos/listar.html", context)
 @login_required(login_url='login')
-def actualizar_departamentos(request, id):
+def actualizar_departamento(request, id):
     logger.warning('Se ejecuta la funcion actualizar_departamentos a las  '+str(datetime.datetime.now())+' horas!')
 
     context ={}
@@ -665,7 +737,7 @@ def actualizar_departamentos(request, id):
                 form.save()
                 logger.warning(f'El departamento {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'Departamento {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("listar_departamentos")
+                return redirect("listar_departamentos")
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -684,7 +756,6 @@ def listar_campus(request):
 @login_required(login_url='login')
 def visualizar_campus(request, id):
     logger.warning('Se ejecuta la funcion visualizar_campus a las  '+str(datetime.datetime.now())+' horas!')
-
     context ={}
     context["titulo"] = "Campus"
     context["accion"] = "Visualizacion"
@@ -761,7 +832,6 @@ def actualizar_campus(request, id):
 @login_required(login_url='login')
 def listar_sesiones(request):
     logger.warning('Se ejecuta la funcion listar_sesiones a las  '+str(datetime.datetime.now())+' horas!')
-
     context ={}
     context["titulo"] = "Sesiones"
     context["dataset"] = Sesiones.objects.all()
@@ -769,12 +839,12 @@ def listar_sesiones(request):
 @login_required(login_url='login')
 def visualizar_sesiones(request, id):
     logger.warning('Se ejecuta la funcion visualizar_sesiones a las  '+str(datetime.datetime.now())+' horas!')
-
     context ={}
     context["titulo"] = "Sesiones"
     context["accion"] = "Visualizacion"
-
+    obj = get_object_or_404(Sesiones, id = id)
     context["data"] = Sesiones.objects.get(id = id)
+    context["form"] = SesionesForm(request.POST or None, instance = obj)
     return render(request, "bitacora/sesiones/detalle.html", context)
 @login_required(login_url='login')
 def crear_sesiones(request):
@@ -794,7 +864,7 @@ def crear_sesiones(request):
                 form.save()
                 logger.warning('La sesion ha sido creado de manera exitosa.')
                 messages.success(request, 'La sesion ha sido creado de manera exitosa.')
-                return redirect('departamentos')
+                return redirect('listar_sesiones')
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -805,16 +875,18 @@ def crear_sesiones(request):
 @login_required(login_url='login')
 def eliminar_sesiones(request, id):
     logger.warning('Se ejecuta la funcion eliminar_sesiones a las  '+str(datetime.datetime.now())+' horas!')
-
     context ={}
     context["titulo"] = "Sesiones"
     obj = get_object_or_404(Sesiones, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         logger.warning( f'Sesion {id} eliminada de manera exitosa.')
         messages.success(request, f'Sesion {id} eliminada de manera exitosa.')
-        return HttpResponseRedirect("/")
-    return render(request, "bitacora/sesiones/listar.html", context)
+        return redirect("listar_sesiones")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'La sesion {id} no se pudo eliminarse..')
+    return render(request, "bitacora/campus/sesiones.html", context)
 @login_required(login_url='login')
 def actualizar_sesiones(request, id):
     logger.warning('Se ejecuta la funcion actualizar_sesiones a las  '+str(datetime.datetime.now())+' horas!')
@@ -826,6 +898,7 @@ def actualizar_sesiones(request, id):
     obj = get_object_or_404(Sesiones, id = id)
     form = SesionesForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
         return render(request, "bitacora/sesiones/detalle.html", context)
     elif request.method == 'POST':
@@ -834,13 +907,13 @@ def actualizar_sesiones(request, id):
                 form.save()
                 logger.warning( f'Sesion {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'Sesion {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("campus")
+                return redirect("listar_sesiones")
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
                 return render(request, "bitacora/sesiones/detalle.html", {'context':context,'form':form})
         except:
-            logger.warning('Ha ocurrido un error inesperado.n')
+            logger.warning('Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
 
 @login_required(login_url='login')

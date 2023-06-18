@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
             <div id="layoutSidenav_content">
                 <main>
@@ -40,9 +41,9 @@
                                             <td>{{ data.ficha_seguridad }}</td>
                                             <td>{{ data.imagen }}</td>
                                                     <td>
-            <a href="cat_mat_peligroso/visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
-           <a href="cat_mat_peligroso/actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
-         <a href="cat_mat_peligroso/eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
+            <a href="visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
+           <a href="actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
+         <a href="eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
         </td>
                                         </tr>
                                            {% endfor %}

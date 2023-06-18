@@ -103,22 +103,13 @@ class Seguimientos(models.Model):
         return f"Seguimiento {self.id}  - {self.nombre}"
     class Meta:
         db_table = "seguimientos"
-class RegAlmacen(models.Model):
-    lote = models.CharField(max_length=200)
-    factura = models.IntegerField()
-    proveedor = models.CharField(max_length=200)
-    fecha_llegada = models.DateTimeField()
-    producto = models.OneToOneField(Sesiones,on_delete=models.CASCADE,verbose_name="producto del almacen")
-    def __str__(self):
-        return f"RegAlmacen {self.id}  - {self.producto}"
-    class Meta:
-        db_table = "reg_almacen"
+
 class CatMatPeligroso(models.Model):
     nombre = models.CharField(max_length=200)
     cretib = models.CharField(max_length=200)
     descripcion = models.TextField()
-    ficha_seguridad = models.TextField()
-    imagen = models.ImageField()
+    ficha_seguridad =models.FileField(upload_to='fichas_seguridad/',null=True,blank=True)
+    imagen = models.ImageField(null=True,blank=True)
     def __str__(self):
         return f"CatMatPeligroso {self.id}  - {self.nombre} - {self.cretib}"
     class Meta:
@@ -160,3 +151,13 @@ class AuditoriasS(models.Model):
         return f"Auditoria {self.id} de {self.producto} realizada el {self.fecha_auditoria}"
     class Meta:
         db_table = "auditorias_s"
+class RegAlmacen(models.Model):
+    lote = models.CharField(max_length=200)
+    factura = models.IntegerField()
+    proveedor = models.CharField(max_length=200)
+    fecha_llegada = models.DateTimeField()
+    producto = models.OneToOneField(UProducto,on_delete=models.CASCADE,verbose_name="producto del almacen")
+    def __str__(self):
+        return f"RegAlmacen {self.id}  - {self.producto}"
+    class Meta:
+        db_table = "reg_almacen"

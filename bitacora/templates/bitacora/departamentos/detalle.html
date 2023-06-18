@@ -20,7 +20,8 @@
         {% if accion == 'Visualizacion' %}
 
        {{ form|crispy }}
-        <input type="submit" value="Regresar">
+                        <a href="{% url 'listar_departamentos'%}" >Regresar</a>
+
 {% endif %}
     </form>
 

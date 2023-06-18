@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
             <div id="layoutSidenav_content">
                 <main>
@@ -29,14 +30,14 @@
                                     <tbody>
                                       {% for data in dataset %}
                                         <tr>
-                                            <td>{{data.id}}/td>
-                                            <td>{{data.nombre}}/td>
-                                            <td>{{data.cantidad}}/td>
-                                            <td>{{data.descripcion}}/td>
+                                            <td>{{data.id}}</td>
+                                            <td>{{data.nombre}}</td>
+                                            <td>{{data.cantidad}}</td>
+                                            <td>{{data.descripcion}}</td>
                                                   <td>
-            <a href="u_sub_producto/visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
-           <a href="u_sub_producto/actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
-         <a href="u_sub_producto/eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
+            <a href="visualizar/{{ data.id }}"><i class="fa-solid fa-eye"></i></a>
+           <a href="actualizar/{{ data.id }}"><i class="fa-solid fa-pencil"></i></a>
+         <a href="eliminar/{{ data.id }}"><i class="fa-solid fa-trash"></i></a>
         </td>
                                         </tr>
                                         {% endfor %}

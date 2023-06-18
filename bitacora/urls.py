@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
-
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
 
     path('inicio/', views.inicio,name="inicio"),
@@ -63,7 +64,7 @@ urlpatterns = [
     path('departamentos/visualizar/<int:id>', views.visualizar_departamentos,name="visualizar_departamentos"),
     path('departamentos/crear',views.crear_departamentos,name="crear_departamentos"),
     path('departamentos/eliminar/<int:id>', views.eliminar_departamentos,name="eliminar_departamentos"),
-    path('departamentos/actualizar/<int:id>', views.actualizar_departamentos,name="actualizar_departamentos"),
+    path('departamentos/actualizar/<int:id>', views.actualizar_departamento,name="actualizar_departamento"),
 
     path('campus/listado', views.listar_campus,name="listar_campus"),
     path('campus/visualizar/<int:id>', views.visualizar_campus,name="visualizar_campus"),
@@ -80,3 +81,6 @@ urlpatterns = [
 
 
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
