@@ -2248,3 +2248,493 @@ Not Found: /almacen/NuevoSeguiminento.html
 Not Found: /favicon.ico
 Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 18:11:37.584265 horas!
 Not Found: /almacen/NuevoSeguiminento.html
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1042, in iniciar_sesion
+    usuario = authenticate(correo=correo, password=contrasena)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    import_module(module_path)
+  File "C:\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\authentication.py", line 1, in <module>
+    from .models import Usuarios
+ImportError: cannot import name 'Usuarios' from 'bitacora.models' (C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\models.py)
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1042, in iniciar_sesion
+    usuario = authenticate(correo=correo, password=contrasena)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\__init__.py", line 76, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\authentication.py", line 17, in authenticate
+    if user.verificar_contrasena(password):
+AttributeError: 'UsuarioPersonalizado' object has no attribute 'verificar_contrasena'
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Internal Server Error: /registro/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "usuarios_username_key"
+DETAIL:  Key (username)=() already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1059, in registrarse
+    usuario = formulario.save()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\forms\models.py", line 466, in save
+    self.instance.save()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\base.py", line 780, in save_base
+    updated = self._save_table(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\base.py", line 923, in _do_insert
+    return manager._insert(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1441, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "usuarios_username_key"
+DETAIL:  Key (username)=() already exists.
+
+Not Found: /apple-touch-icon.png
+Internal Server Error: /registro/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1060, in registrarse
+    if formulario.tipo_usuario=='administrador':
+AttributeError: 'RegistroForm' object has no attribute 'tipo_usuario'
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Internal Server Error: /registro/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1063, in registrarse
+    permission = Permission.objects.get(codename='administrador')
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.Permission.DoesNotExist: Permission matching query does not exist.
+Not Found: /apple-touch-icon.png
+Internal Server Error: /registro/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1063, in registrarse
+    permission = Permission.objects.get(codename='administrador')
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.Permission.DoesNotExist: Permission matching query does not exist.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 19:41:00.349964 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 19:41:00.349964 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:41:00.450245 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 19:41:00.450245 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:41:00.450245 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 19:41:00.450245 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:41:00.450245 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 19:45:53.902575 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 19:45:53.902575 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:45:54.023279 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 19:45:54.023279 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:45:54.023279 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 19:45:54.023279 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 19:45:54.040341 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:02:28.465086 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:02:28.466244 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:28.617125 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:02:28.617125 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:28.623128 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:02:28.623128 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:28.629266 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:02:38.627822 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:02:38.628820 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:38.734021 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:02:38.734021 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:38.739851 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:02:38.739851 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:38.745880 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:02:55.749167 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:02:55.749167 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:55.869360 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:02:55.869360 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:55.877199 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:02:55.877199 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:02:55.885279 horas!
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:09:01.167866 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:09:01.167866 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:01.285902 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:09:01.285902 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:01.291986 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:09:01.291986 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:01.297907 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:09:30.300365 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:09:30.300365 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:30.315991 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:09:30.315991 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:30.315991 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:09:30.315991 horas!
+Ocurrio un error al crear el permiso administrador en permissions.py a las  2023-06-25 20:09:30.315991 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:09:44.853098 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:09:44.853098 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:09:44.883431 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:09:44.883431 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:10:54.541806 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:10:54.541806 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:10:54.541806 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:10:54.541806 horas!
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:15:38.977302 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:15:38.978303 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:15:38.987306 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:15:38.990305 horas!
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:16:48.909569 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:16:48.909569 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:16:48.917496 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:16:48.919602 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:17:36.305295 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:17:36.305295 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:17:36.315429 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:17:36.323484 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:19:34.344567 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:19:34.344567 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:19:34.344567 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:19:34.344567 horas!
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 20:19:42.888286 horas!
+Not Found: /favicon.ico
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:26:32.785361 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:26:32.785361 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:26:32.796428 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:26:32.799448 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:27:40.400715 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:27:40.400715 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:27:40.408718 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:27:40.410719 horas!
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:29:00.772365 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:29:00.772365 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:29:00.780367 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:29:00.782274 horas!
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:29:50.764167 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:29:50.765168 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:29:50.772169 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:29:50.775171 horas!
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:30:51.180931 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:30:51.180931 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:30:51.187933 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:30:51.191019 horas!
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:32:23.731693 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:32:23.731693 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:32:23.743696 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:32:23.746697 horas!
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:33:53.160815 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:33:53.160815 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:33:53.168819 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:33:53.171814 horas!
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Not Found: /acerca/bitacora.auditor
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:40:01.603835 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:40:01.603835 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:40:01.612834 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:40:01.616833 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:42:42.395690 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:42:42.395690 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:42:42.402694 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:42:42.404827 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:43:32.502624 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:43:32.502624 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:43:32.511627 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:43:32.514628 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:44:14.543928 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:44:14.543928 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:44:14.550932 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:44:14.552931 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Internal Server Error: /acerca/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 42, in <lambda>
+    @user_passes_test(lambda u: u.has_perm(['bitacora.administrador','bitacora.auditor']))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\models.py", line 300, in has_perm
+    return _user_has_perm(self, perm, obj)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\models.py", line 210, in _user_has_perm
+    if backend.has_perm(user, perm, obj):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\backends.py", line 108, in has_perm
+    return user_obj.is_active and super().has_perm(user_obj, perm, obj=obj)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\backends.py", line 28, in has_perm
+    return perm in self.get_all_permissions(user_obj, obj=obj)
+TypeError: unhashable type: 'list'
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:44:42.844213 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:44:42.844213 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:44:42.852214 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:44:42.855216 horas!
+Se ejecuta la funcion crear_permisos a las  2023-06-25 20:52:46.718568 horas!
+Se trata de crear el permiso administrador en permissions.py a las  2023-06-25 20:52:46.718568 horas!
+Se trata de crear el permiso auditor en permissions.py a las  2023-06-25 20:52:46.729570 horas!
+Se trata de crear el permiso almacen en permissions.py a las  2023-06-25 20:52:46.734574 horas!
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Internal Server Error: /acerca/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: '1==0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 45, in acerca
+    return render(request, "bitacora/inicio/AcercaDe.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 904, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 837, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 840, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==0' from '1==0'
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Internal Server Error: /acerca/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 45, in acerca
+    return render(request, "bitacora/inicio/AcercaDe.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 904, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 193, in parse
+    raise self.error_class("Unused '%s' at end of if expression." %
+django.template.exceptions.TemplateSyntaxError: Unused ''bitacora.administrador'' at end of if expression.
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png

@@ -143,24 +143,28 @@ class CampusForm(forms.ModelForm):
 
 class UsuariosForm(forms.ModelForm):
     class Meta:
-        model = Usuarios
+        model = UsuarioPersonalizado
         fields = [
             "nombre",
            "correo",
             "password",
-            "sesion"
+            "sesion",
+           "tipo_usuario"
         ]
         labels = {
               "nombre": _("Nombre"),
             "correo": _("Correo"),
             "password": _("Contrasena"),
             "sesion": _("Sesion"),
+                    "tipo_usuario": _("Tipo de usuario"),
+
         }
         help_texts = {
               "nombre": _("Ingresa el nombre del usuario."),
             "correo": _("Ingresa el correo del usuario."),
             "password": _("Ingresa la contrasena del usuario."),
             "sesion": _("Ingresa la sesion del usuario."),
+                "tipo_usuario": _("Selecciona el tipo de usuario."),
         }
 
 class SesionesForm(forms.ModelForm):
@@ -280,7 +284,7 @@ class AuditoriasSForm(forms.ModelForm):
             'fecha_auditoria': XYZ_DateTimeInput(format=["%Y-%m-%dT%H:%M", "%Y-%m-%d %H:%M"],),}
 class LoginForm(forms.ModelForm):
     class Meta:
-        model = Usuarios
+        model = UsuarioPersonalizado
         fields = [
             "correo",
             "password",
@@ -296,19 +300,18 @@ class LoginForm(forms.ModelForm):
 
 class RegistroForm(forms.ModelForm):
     class Meta:
-        model = Usuarios
-        fields = ['nombre', 'correo', 'password','is_active','is_superuser' ]
+        model = UsuarioPersonalizado
+        fields = ['nombre', 'correo', 'password','tipo_usuario' ]
         labels = {
             "password": _("Contrasena"),
-             "is_superuser": _("Es un usuario administrador"),
- "is_active": _("Es un usuario activo"),
+             "tipo_usuario": _("Tipo de usuario"),
+
         }
         help_texts = {
             "nombre": _("Ingresa el nombre completo del usuario."),
               "correo": _("Ingresa el correo del usuario."),
               "password": _("Ingresa la contrasena del usuario."),
-              "is_active": _("¿El usuario estara activo en el sistema?"),
-              "is_superuser": _("¿El usuario tendra permisos de administrador?."),
+              "tipo_usuario": _("Selecciona el tipo de usuario."),
         }
 
 class NuevoSeguimientoForm(forms.ModelForm):

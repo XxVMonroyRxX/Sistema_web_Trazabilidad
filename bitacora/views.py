@@ -12,7 +12,8 @@ from django.core.files.storage import FileSystemStorage
 from qrcode import *
 import time
 from django.conf import settings
-
+from django.contrib.auth.models import Permission
+from django.contrib.auth.decorators import permission_required,user_passes_test
 
 logger = logging.getLogger(__name__)
 
@@ -36,6 +37,8 @@ def almacen(request):
     if request.method == 'GET':
             return render(request, "bitacora/inicio/PrincipalAlmacen.html", context)
 
+
+@login_required(login_url='login')
 def acerca(request):
     context ={}
     if request.method == 'GET':
@@ -946,7 +949,7 @@ def listar_usuarios(request):
 
     context ={}
     context["titulo"] = "Usuarios"
-    context["dataset"] = Usuarios.objects.all()
+    context["dataset"] = UsuarioPersonalizado.objects.all()
     return render(request, "bitacora/usuarios/listar.html", context)
 @login_required(login_url='login')
 def visualizar_usuarios(request, id):
@@ -956,7 +959,7 @@ def visualizar_usuarios(request, id):
     context["titulo"] = "Usuarios"
     context["accion"] = "Visualizacion"
 
-    context["data"] = Usuarios.objects.get(id = id)
+    context["data"] = UsuarioPersonalizado.objects.get(id = id)
     return render(request, "bitacora/usuarios/detalle.html", context)
 @login_required(login_url='login')
 def crear_usuarios(request):
@@ -990,7 +993,7 @@ def eliminar_usuarios(request, id):
 
     context ={}
     context["titulo"] = "Usuarios"
-    obj = get_object_or_404(Usuarios, id = id)
+    obj = get_object_or_404(UsuarioPersonalizado, id = id)
     if request.method =="POST":
         obj.delete()
         logger.warning(f'Usuario {id} eliminado de manera exitosa.')
@@ -1005,7 +1008,7 @@ def actualizar_usuarios(request, id):
     context["titulo"] = "Usuarios"
     context["accion"] = "Actualizacion"
 
-    obj = get_object_or_404(Usuarios, id = id)
+    obj = get_object_or_404(UsuarioPersonalizado, id = id)
     form = UsuariosForm(request.POST or None, instance = obj)
     if request.method == 'GET':
         context["form"] = form
@@ -1043,6 +1046,7 @@ def iniciar_sesion(request):
         if usuario is not None:
             if usuario.is_active:
                 login(request, usuario)
+                print("Permisos del usuario al logueo ",usuario.get_user_permissions())
                 request.session["sesion_usuario"] = usuario.nombre
                 return redirect('inicio')
             messages.success(request, f'El usuario no esta activo, contacte al administrador')
@@ -1057,6 +1061,19 @@ def registrarse(request):
         formulario = RegistroForm(request.POST)
         if formulario.is_valid():
             usuario = formulario.save()
+            tipo_usuario = formulario.cleaned_data.get('tipo_usuario')
+            print(tipo_usuario)
+            if tipo_usuario=='administrador':
+                permission = Permission.objects.get(codename='administrador')
+                usuario.user_permissions.add(permission)
+            if tipo_usuario=='auditor':
+                permission = Permission.objects.get(codename='auditor')
+                usuario.user_permissions.add(permission)
+            if tipo_usuario=='almacen':
+                permission = Permission.objects.get(codename='almacen')
+                usuario.user_permissions.add(permission)
+            print("Finaliza")
+            print("Permisos del usuario ",usuario.get_user_permissions())
             messages.success(request, "Registro de usuario exitoso.")
             return redirect("login")
         messages.error(request, "Registro invalido")

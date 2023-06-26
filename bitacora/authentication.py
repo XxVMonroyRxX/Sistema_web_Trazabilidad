@@ -1,4 +1,4 @@
-from .models import Usuarios
+from .models import UsuarioPersonalizado
 from django.contrib.auth.models import User
 
 class AutenticacionPorCorreo:
@@ -13,7 +13,7 @@ class AutenticacionPorCorreo:
         Overrides the authenticate method to allow users to log in using their email address.
         """
         try:
-            user = Usuarios.objects.get(correo=correo)
+            user = UsuarioPersonalizado.objects.get(correo=correo)
             if user.verificar_contrasena(password):
                 return user
             return None
@@ -25,7 +25,7 @@ class AutenticacionPorCorreo:
         Overrides the get_user method to allow users to log in using their email address.
         """
         try:
-            return Usuarios.objects.get(id=user_id)
+            return UsuarioPersonalizado.objects.get(id=user_id)
         except User.DoesNotExist:
             return None
 

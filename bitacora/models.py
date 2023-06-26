@@ -11,73 +11,31 @@ class Sesiones(models.Model):
     class Meta:
         db_table = "sesiones"
 
+class UsuarioPersonalizado(AbstractUser):
+    LEVEL_CHOICES = (
+        ('administrador', 'Usuario Administrador'),
+        ('auditor', 'Usuario Auditor'),
+        ('almacen', 'Usuario Almacen'),
 
-class CustomUserManager(BaseUserManager):
-    def validar_datos(self,nombre,correo,contrasena,sesion):
-        if not nombre or nombre is None or nombre=='':
-            raise ValueError('Se necesita especificar un nombre')
-        if not correo or correo is None or correo=='':
-            raise ValueError('Se necesita especificar un correo')
-        if not contrasena or contrasena is None or contrasena=='':
-            raise ValueError('Se necesita especificar una contrasena')
-
-
-    def create_user(self,nombre,correo,contrasena ):
-        self.validar_datos(nombre,correo,contrasena)
-
-        user = self.create_user(
-          nombre=nombre,correo=correo,password=contrasena
-        )
-        user.is_active = True
-        user.is_superuser = False
-        user.save(using=self._db)
-        return user
-
-
-    def create_superuser(self,nombre,correo,contrasena):
-        self.validar_datos(nombre,correo,contrasena)
-
-        user = self.create_user(
-          nombre=nombre,correo=correo,password=contrasena
-        )
-        user.is_active = True
-        user.is_superuser = True
-        user.save(using=self._db)
-        return user
-class Usuarios(AbstractUser):
+    )
     username = None
     nombre = models.CharField(max_length=30)
     correo = models.EmailField(max_length=200,unique=True)
     password = models.CharField(max_length=200)
     sesion = models.ForeignKey(Sesiones,on_delete=models.DO_NOTHING,verbose_name="sesion de usuario",default=None, blank=True, null=True,related_name="usuario")
-    is_active = models.BooleanField(default=True)
-    is_superuser = models.BooleanField(default=False)
-
-
+    tipo_usuario = models.CharField(max_length=30, choices=LEVEL_CHOICES, default='regular')
+    REQUIRED_FIELDS = [nombre,correo,password]
     USERNAME_FIELD = 'correo'
-    REQUIRED_FIELDS = [nombre,correo,password] # Email & Password are required by default.
+
+    def __str__(self):
+        return f"Usuarios {self.id}  - {self.nombre} - {self.correo}"
+    class Meta:
+        db_table = "usuarios"
     def verificar_contrasena(self,rcontrasena):
         if rcontrasena==self.password:
             return True
         else:
             return False
-    def get_full_name(self):
-        return self.email
-
-    def has_perm(self, perm, obj=None):
-	    return True
-
-    def has_module_perms(self, app_label):
-        return True
-
-
-    @property
-    def is_admin(self):
-        return self.is_admin
-    def __str__(self):
-        return f"Usuarios {self.id}  - {self.nombre} - {self.correo}"
-    class Meta:
-        db_table = "usuarios"
 class Campus(models.Model):
     nombre = models.CharField(max_length=50)
     class Meta:

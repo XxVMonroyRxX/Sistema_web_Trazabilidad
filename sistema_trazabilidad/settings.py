@@ -161,11 +161,12 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'bitacora.Usuarios'
+AUTH_USER_MODEL = 'bitacora.UsuarioPersonalizado'
 LOGIN_REDIRECT_URL = 'login'
 LOGIN_URL = 'login'
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+
 
 ACCOUNT_FORMS = {
     'signup': 'accounts.forms.CustomUserCreationForm'
