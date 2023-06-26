@@ -1,10 +1,11 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% extends 'bitacora/base/base_admin.html' %}
 
+{% block content %}
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Tabla  {{ titulo }}</h1>
-                        <div class="card mb-4">
+                        <h1 class="mt-4 container  d-flex justify-content-around">Tabla  {{ titulo }} <a href="{% url 'crear_sesiones' %}" class="btn btn-dark">&nbsp;Crear&nbsp;<i class="fa fa-plus" aria-hidden="true"></i> </a>
+</h1>                        <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
                                 Listado de  {{ titulo }}
@@ -50,3 +51,4 @@
                     </div>
                 </footer>
             </div>
+{% endblock %}

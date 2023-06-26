@@ -3,6 +3,16 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
+path('almacen/', views.almacen_inicio,name="almacen_inicio"),
+    path('regalmacen/', views.reg_nuevo_material,name="reg_nuevo_material"),
+    path('seguimiento/', views.reg_seguimiento,name="reg_seguimiento"),
+
+    path('registro_almacen/', views.registro_almacen,name="registro_almacen"),
+    path('registro_almacen_continuacion/', views.registro_almacen2,name="registro_almacen_continuacion"),
+
+
+
+
 
     path('inicio/', views.inicio,name="inicio"),
     path('', views.inicio,name="inicio2"),
@@ -11,7 +21,7 @@ urlpatterns = [
     path('registro/',views.registrarse,name="registro"),
     path('almacen/', views.almacen,name="almacen"),
     path('acerca/', views.acerca,name="acerca"),
-
+    path('admin/', views.admin,name="admin"),
     path('sesiones/listado', views.listar_sesiones,name="listar_sesiones"),
     path('sesiones/visualizar/<int:id>', views.visualizar_sesiones,name="visualizar_sesiones"),
     path('sesiones/crear',views.crear_sesiones,name="crear_sesiones"),
@@ -55,10 +65,10 @@ urlpatterns = [
     path('reg_almacen/actualizar/<int:id>', views.actualizar_reg_almacen,name="actualizar_reg_almacen"),
 
     path('seguimientos/listado', views.listar_seguimientos,name="listar_seguimientos"),
-    path('seguimientos/visualizar/<int:id>', views.visualizar_seguimientos,name="visualizar_seguimientos"),
-    path('seguimientos/crear',views.crear_seguimientos,name="crear_seguimientos"),
-    path('seguimientos/eliminar/<int:id>', views.eliminar_seguimientos,name="eliminar_seguimientos"),
-    path('seguimientos/actualizar/<int:id>', views.actualizar_seguimientos,name="actualizar_seguimientos"),
+    path('seguimientos/visualizar/<int:id>', views.visualizar_seguimientos,name="visualizar_seguimiento"),
+    path('seguimientos/crear',views.crear_seguimientos,name="crear_seguimiento"),
+    path('seguimientos/eliminar/<int:id>', views.eliminar_seguimientos,name="eliminar_seguimiento"),
+    path('seguimientos/actualizar/<int:id>', views.actualizar_seguimientos,name="actualizar_seguimiento"),
 
     path('departamentos/listado', views.listar_departamentos,name="listar_departamentos"),
     path('departamentos/visualizar/<int:id>', views.visualizar_departamentos,name="visualizar_departamentos"),
@@ -80,7 +90,6 @@ urlpatterns = [
 
 
 
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

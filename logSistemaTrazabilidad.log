@@ -1,0 +1,2250 @@
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_campus a las  2023-06-21 01:47:31.626414 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_campus a las  2023-06-21 01:47:36.636273 horas!
+El Campus ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:36.805697 horas!
+Se ejecuta la funcion visualizar_campus a las  2023-06-21 01:47:40.009460 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:41.580804 horas!
+Se ejecuta la funcion actualizar_campus a las  2023-06-21 01:47:42.714023 horas!
+Se ejecuta la funcion actualizar_campus a las  2023-06-21 01:47:44.472323 horas!
+El campus 13 ha sido actualizado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:44.619651 horas!
+Se ejecuta la funcion eliminar_campus a las  2023-06-21 01:47:46.091684 horas!
+Campus 13 eliminado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:46.238838 horas!
+Se ejecuta la funcion eliminar_campus a las  2023-06-21 01:47:47.538948 horas!
+Campus 12 eliminado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:47.723955 horas!
+Se ejecuta la funcion eliminar_campus a las  2023-06-21 01:47:48.777939 horas!
+Campus 11 eliminado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-21 01:47:48.909482 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:55:21.452332 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:55:25.759381 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 01:55:25.906536 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:55:31.113862 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:55:44.169574 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 01:55:44.338987 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:55:49.431065 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 01:56:03.118881 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 01:56:03.557036 horas!
+Se ejecuta la funcion actualizar_cat_mat_peligroso a las  2023-06-21 01:56:08.399386 horas!
+Se ejecuta la funcion actualizar_cat_mat_peligroso a las  2023-06-21 01:56:15.666814 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 01:59:04.752385 horas!
+Not Found: /media/Free Topic Writing Activity.pdf
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:00:32.075007 horas!
+Internal Server Error: /cat_mat_peligroso/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'data.ficha_seguridad!=null'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 390, in listar_cat_mat_peligroso
+    return render(request, "bitacora/cat_mat_peligroso/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 904, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 837, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 840, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!=null' from 'data.ficha_seguridad!=null'
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:00:43.541307 horas!
+Internal Server Error: /cat_mat_peligroso/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'data.ficha_seguridad!=None'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 390, in listar_cat_mat_peligroso
+    return render(request, "bitacora/cat_mat_peligroso/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 904, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 837, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 840, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!=None' from 'data.ficha_seguridad!=None'
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:00:44.689588 horas!
+Internal Server Error: /cat_mat_peligroso/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'data.ficha_seguridad!=None'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 390, in listar_cat_mat_peligroso
+    return render(request, "bitacora/cat_mat_peligroso/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 904, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 837, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 840, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 692, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!=None' from 'data.ficha_seguridad!=None'
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:01:37.111877 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:02:00.786909 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:02:02.123931 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:02:03.192015 horas!
+Not Found: /media/Free Topic Writing Activity_c3KVxFP.pdf
+Not Found: /cat_mat_peligroso/fichas_seguridad/Free_Topic_Writing_Activity.pdf
+Not Found: /cat_mat_peligroso/fichas_seguridad/Free_Topic_Writing_Activity.pdf
+Not Found: /cat_mat_peligroso/Tiburón-Toro-Rémora.jpg
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:02:31.247486 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:02:32.696963 horas!
+Not Found: /cat_mat_peligroso/
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-21 02:11:35.739497 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:11:40.103186 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:12:15.277461 horas!
+Not Found: /cat_mat_peligroso/css/styles.css
+Not Found: /cat_mat_peligroso/js/scripts.js
+Not Found: /cat_mat_peligroso/js/datatables-simple-demo.js
+Not Found: /cat_mat_peligroso/js/scripts.js
+Not Found: /cat_mat_peligroso/js/datatables-simple-demo.js
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:15:24.238997 horas!
+Not Found: /cat_mat_peligroso/js/datatables-simple-demo.js
+Not Found: /cat_mat_peligroso/js/scripts.js
+Not Found: /cat_mat_peligroso/js/scripts.js
+Not Found: /cat_mat_peligroso/js/datatables-simple-demo.js
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:16:28.297885 horas!
+Se ejecuta la funcion eliminar_cat_mat_peligroso a las  2023-06-21 02:17:21.198973 horas!
+Cat Mat Peligroso 6 eliminado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:17:21.377396 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:18:36.698436 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:18:56.132998 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:19:24.196091 horas!
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-21 02:20:00.142503 horas!
+Not Found: /site.webmanifest
+Not Found: /favicon-32x32.png
+Not Found: /favicon-16x16.png
+Not Found: /site.webmanifest
+Not Found: /site.webmanifest
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:08:15.945974 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:08:19.871218 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-22 01:08:32.439149 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:08:36.018062 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:08:40.208128 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-22 01:08:40.427183 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:08:47.092478 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:08:51.152432 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_departamentos a las  2023-06-22 01:08:58.636811 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:09:02.369313 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:09:08.036392 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-22 01:09:08.204436 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:09:14.705708 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:09:16.801901 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:09:55.005205 horas!
+Internal Server Error: /u_producto/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 225, in crear_u_producto
+    return render(request, "bitacora/u_productos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bitacora/u_productos/detalle.html
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-22 01:10:17.653416 horas!
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-22 01:10:23.126633 horas!
+Subproducto ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-22 01:10:23.296676 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-22 01:10:27.885836 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:10:40.610070 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:10:43.729941 horas!
+Internal Server Error: /u_producto/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 225, in crear_u_producto
+    return render(request, "bitacora/u_productos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bitacora/u_productos/detalle.html
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:12:31.836654 horas!
+Internal Server Error: /u_producto/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 225, in crear_u_producto
+    return render(request, "bitacora/u_productos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bitacora/u_productos/detalle.html
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:13:59.356894 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:14:13.532042 horas!
+Se generaron errores de validacion
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:16:32.195811 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:21:13.045849 horas!
+Se generaron errores de validacion
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:24:06.304867 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-22 01:24:11.397988 horas!
+La auditoria ha sido creada de manera exitosa.
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:24:11.609045 horas!
+Se ejecuta la funcion visualizar_u_producto a las  2023-06-22 01:24:23.277652 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:24:24.783112 horas!
+Se ejecuta la funcion actualizar_u_producto a las  2023-06-22 01:24:28.927628 horas!
+Internal Server Error: /u_producto/actualizar/1
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 263, in actualizar_u_producto
+    return render(request, "bitacora/u_producto/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'actualizar_u_producto' with arguments '('',)' not found. 1 pattern(s) tried: ['u_producto/actualizar/(?P<id>[0-9]+)\\Z']
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:28:26.100731 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:30:32.807782 horas!
+Se ejecuta la funcion visualizar_u_producto a las  2023-06-22 01:30:35.696418 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:30:40.784131 horas!
+Se ejecuta la funcion actualizar_u_producto a las  2023-06-22 01:30:42.587897 horas!
+Se ejecuta la funcion actualizar_u_producto a las  2023-06-22 01:30:51.635569 horas!
+El producto 1 ha sido actualizado de manera exitosa.
+Not Found: /u_producto/actualizar/listar_u_producto
+Se ejecuta la funcion listar_u_producto a las  2023-06-22 01:31:01.699024 horas!
+Not Found: /seguimiento/listado
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:33:28.888420 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:33:33.112354 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:34:08.492526 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-22 01:34:14.479033 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_departamentos a las  2023-06-22 01:34:19.443037 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:34:27.132056 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:34:30.272876 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:36:20.097920 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:36:24.103424 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:36:26.703866 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:36:43.724061 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:37:21.632273 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:38:44.396412 horas!
+Internal Server Error: /seguimientos/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 607, in crear_seguimientos
+    return render(request, "bitacora/seguimientos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'crear_seguimiento' not found. 'crear_seguimiento' is not a valid view function or pattern name.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:39:31.907348 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:40:43.180708 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:46:17.785931 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:47:26.994776 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:47:45.576838 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:47:53.276579 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:47:56.257950 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:49:01.000873 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:49:03.708562 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:49:14.581032 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:49:19.409794 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-22 01:51:14.034809 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:51:16.123920 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:51:29.093429 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:53:47.977548 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:54:00.039675 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:57:46.446819 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-22 01:58:03.961110 horas!
+Se han generado errores de validacion
+Not Found: /apple-touch-icon.png
+Not Found: /auditoriase/listado
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 13:09:57.447347 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 13:10:00.844634 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 13:12:58.531534 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 13:20:09.614058 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 13:20:37.231437 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 13:21:10.761397 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 13:21:20.446125 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 13:21:25.007851 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 13:21:50.502216 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 14:03:44.383602 horas!
+Not Found: /departamento/crear
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:10:43.020063 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:10:48.042039 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:10:54.818004 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:10:57.921779 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:11:13.235859 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:11:14.998247 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:11:27.760195 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:12:26.228608 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:22.159403 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:24.999080 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:29.263427 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:43.444476 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:44.794169 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:13:48.387543 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_campus a las  2023-06-23 14:15:48.992585 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 14:16:17.481271 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 14:16:20.317685 horas!
+El Campus ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-23 14:16:20.551742 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 14:16:25.588336 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:16:27.853770 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:16:32.522199 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 14:16:32.782938 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 14:18:56.219682 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:19:03.290717 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:20:15.365395 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:20:20.670557 horas!
+Se han generado errores de validacion
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1031, in iniciar_sesion
+    usuario = authenticate(correo=correo, password=contrasena)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\__init__.py", line 76, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\authentication.py", line 16, in authenticate
+    user = Usuarios.objects.get(correo=correo)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+bitacora.models.Usuarios.DoesNotExist: Usuarios matching query does not exist.
+Not Found: /favicon.ico
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:33:34.424340 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 14:33:42.618996 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 14:33:50.654128 horas!
+El Campus ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-23 14:33:50.832170 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 14:33:57.649879 horas!
+Not Found: /departamentos/crer
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:34:02.841783 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:34:10.239906 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 14:34:10.450950 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 14:34:15.889133 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 14:34:39.068958 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 14:34:45.838613 horas!
+Not Found: /cat_mat_peligroso/
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-23 14:35:16.422221 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-23 14:35:22.281686 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 14:35:22.447726 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 14:35:29.398878 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-23 14:35:53.569172 horas!
+Not Found: /uproducto/crear
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 14:36:42.967836 horas!
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-23 14:36:50.292961 horas!
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-23 14:36:58.878996 horas!
+Subproducto ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 14:36:59.050137 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 14:37:03.035084 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 14:37:13.421560 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 14:37:28.380144 horas!
+La auditoria ha sido creada de manera exitosa.
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 14:37:28.598202 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-23 14:40:01.552985 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-23 15:00:11.549869 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-23 15:00:37.414346 horas!
+Reg Almacen ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 15:00:37.640400 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 15:40:12.140945 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 15:41:04.793862 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 15:41:07.268217 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 15:41:17.984084 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 15:41:37.155736 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 15:42:22.187780 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 15:42:27.580214 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 15:42:33.788338 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 15:49:55.129845 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:06:48.470286 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:06:52.318006 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:06:52.470911 horas!
+Se ejecuta la funcion eliminar_departamentos a las  2023-06-23 16:06:57.596138 horas!
+Departamento 2 eliminado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:06:57.754185 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:07:01.580845 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:07:06.448096 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:07:06.611004 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 16:08:07.896589 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:08:13.647102 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:08:43.569262 horas!
+Ha ocurrido un error inesperado.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:09:14.506872 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:10:11.454874 horas!
+Ha ocurrido un error inesperado.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:10:15.519942 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:10:18.490456 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:10:31.284593 horas!
+Ha ocurrido un error inesperado.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:13:03.837983 horas!
+Ha ocurrido un error inesperado.Cannot assign "<UProducto: Producto 1  - fefsdf>": "Seguimientos.producto" must be a "Sesiones" instance.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:13:06.477227 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:13:18.869848 horas!
+Ha ocurrido un error inesperado.Cannot assign "<UProducto: Producto 1  - fefsdf>": "Seguimientos.producto" must be a "Sesiones" instance.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:16:18.796344 horas!
+Ha ocurrido un error inesperado.Cannot assign "<Campus: Campus: Mi campus 1>": "Seguimientos.departamento_inicial" must be a "Departamentos" instance.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:16:21.920302 horas!
+Ha ocurrido un error inesperado.Cannot assign "<Campus: Campus: Mi campus 1>": "Seguimientos.departamento_inicial" must be a "Departamentos" instance.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:16:24.053915 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:16:26.060744 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:16:40.118363 horas!
+Ha ocurrido un error inesperado.Cannot assign "<Campus: Campus: Mi campus 1>": "Seguimientos.departamento_inicial" must be a "Departamentos" instance.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:22:54.658521 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 16:23:01.278331 horas!
+Se ejecuta la funcion crear_campus a las  2023-06-23 16:23:03.671481 horas!
+El Campus ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_campus a las  2023-06-23 16:23:03.859531 horas!
+Not Found: /departamento/listado
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:23:10.676298 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:23:13.257454 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-23 16:23:17.652485 horas!
+Departamento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:23:17.835396 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:23:23.782333 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:23:25.862523 horas!
+Not Found: /uproducto/crear
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 16:23:38.614301 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-23 16:23:48.343331 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-23 16:23:52.049294 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 16:23:52.284344 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:23:58.625406 horas!
+Not Found: /seguimientos/creaar
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:24:03.701444 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 16:24:18.490637 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 16:24:21.064383 horas!
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-23 16:24:40.815663 horas!
+Se ejecuta la funcion crear_u_sub_producto a las  2023-06-23 16:24:44.968424 horas!
+Subproducto ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 16:24:45.306510 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 16:24:52.284307 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 16:24:55.864815 horas!
+Se ejecuta la funcion crear_u_producto a las  2023-06-23 16:25:09.459935 horas!
+La auditoria ha sido creada de manera exitosa.
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 16:25:09.698996 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:25:13.384925 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:25:15.607482 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:25:29.475546 horas!
+Ha ocurrido un error inesperado.Cannot assign "<Campus: Campus: sdasd>": "Seguimientos.departamento_inicial" must be a "Departamentos" instance.
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:26:25.445570 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:27:03.311901 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:27:04.674708 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:27:05.632947 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:27:19.968511 horas!
+Seguimiento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:27:20.209572 horas!
+Se ejecuta la funcion visualizar_seguimientos a las  2023-06-23 16:27:26.894882 horas!
+Internal Server Error: /seguimientos/visualizar/1
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 603, in visualizar_seguimientos
+    return render(request, "bitacora/seguimientos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_seguimiento' not found. 'listar_seguimiento' is not a valid view function or pattern name.
+Se ejecuta la funcion actualizar_seguimientos a las  2023-06-23 16:30:10.256954 horas!
+Se ejecuta la funcion actualizar_seguimientos a las  2023-06-23 16:30:14.308190 horas!
+Seguimiento 1 ha sido actualizado de manera exitosa.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:30:14.510241 horas!
+Se ejecuta la funcion eliminar_seguimientos a las  2023-06-23 16:30:18.958830 horas!
+Seguimiento 1 eliminado de manera exitosa.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:30:19.143875 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:49:55.400312 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:50:29.538919 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 16:50:32.222599 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:50:38.392475 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 16:50:52.761569 horas!
+Seguimiento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 16:50:52.936614 horas!
+Not Found: /auditorias_E/listado
+Not Found: /auditorias_E/listado
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:51:03.899016 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 16:51:06.503804 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-23 16:51:22.955457 horas!
+La auditoria ha sido creada de manera exitosa.
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:51:23.228524 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 16:51:38.045439 horas!
+Se ejecuta la funcion crear_auditorias_s a las  2023-06-23 16:51:40.232627 horas!
+Se ejecuta la funcion crear_auditorias_s a las  2023-06-23 16:51:54.110620 horas!
+Se crea una auditoria a las  2023-06-23 16:51:54.143634 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 16:51:54.293644 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:09.229112 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:34.781301 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:35.843157 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:42.169958 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:43.193215 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:43.629326 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 16:55:44.083440 horas!
+Internal Server Error: /departamentos/listado
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 682, in listar_departamentos
+    return render(request, "bitacora/departamentos/listar.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 3: 'block'. Looking for one of: endblock.
+Not Found: /auditorias_E/listado
+Not Found: /auditorias_E/listado
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:56:55.561525 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:57:17.027447 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:57:18.130836 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:57:22.396874 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:57:23.759081 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 16:58:14.908840 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 17:01:03.802345 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:01:05.120349 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 17:01:06.200864 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:01:07.955715 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:01:10.375203 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 17:01:12.123741 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:01:13.368960 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 17:01:14.446724 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 17:01:15.563008 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 17:01:16.632025 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 17:01:17.602022 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 17:01:18.989393 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 17:01:20.088235 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 17:01:21.294226 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 17:01:22.461519 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 17:01:23.727837 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 17:01:25.129261 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 17:01:26.443290 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 17:01:28.141521 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 17:01:29.134520 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 17:01:30.845293 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 17:01:31.897452 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:01:33.632267 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 17:01:35.353074 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:01:36.209137 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:02:03.985176 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:02:46.265145 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 17:02:49.587506 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 17:02:50.495228 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 17:02:51.480957 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 17:02:52.121120 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 17:03:01.420496 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 17:03:02.283991 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 17:03:03.203044 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 17:03:04.014739 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 17:03:04.792450 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 17:03:05.550718 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 17:03:06.271628 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:03:06.900788 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 17:03:07.711997 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:03:08.279138 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:03:38.618650 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:03:39.847707 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 17:03:53.029678 horas!
+Internal Server Error: /inicio/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 19, in inicio
+    return render(request, "bitacora/inicio/Index.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listado_usuarios' not found. 'listado_usuarios' is not a valid view function or pattern name.
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 17:04:53.304458 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 17:05:16.822306 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 17:05:25.203412 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 17:53:05.692675 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 17:53:09.348917 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 17:53:21.377898 horas!
+Ha ocurrido un error inesperado.'builtin_function_or_method' object has no attribute 'time'
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 17:53:56.274715 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 17:54:07.562010 horas!
+Seguimiento ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 17:54:07.836291 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:02:39.231954 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:02:49.433758 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:00.560758 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:07.290588 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:23.791978 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:32.377667 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:33.793688 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:45.727743 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:03:53.222330 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:04:12.255855 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:04:13.494159 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:04:35.374135 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:25.157015 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:26.587893 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:38.153170 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:39.685556 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:52.300318 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:05:53.939739 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:06:18.669043 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:06:19.989559 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:07:03.671029 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:08:23.772449 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:10:12.737914 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:11:42.203127 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:11:43.674261 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:12:03.015773 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:12:05.497279 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:03.064271 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:04.444906 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:12.907346 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:50.236850 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:51.344127 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:13:51.755230 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:11.804768 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:13.223404 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:22.932418 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:24.121721 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:25.112972 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:15:50.745141 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:16:02.083044 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:16:41.550962 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 18:16:44.275428 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-23 18:16:46.765059 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:16:55.396592 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 18:17:12.261749 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 18:18:13.477996 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-23 18:18:15.819188 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-23 18:18:17.375127 horas!
+Se ejecuta la funcion listar_campus a las  2023-06-23 18:18:18.347374 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-23 18:18:19.454664 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-23 18:18:20.510021 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-23 18:18:21.615203 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-23 18:18:22.713483 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-23 18:18:23.775750 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-23 18:18:25.354680 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-23 18:18:26.594998 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-23 18:18:28.540186 horas!
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 01:11:44.074268 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 01:11:49.236149 horas!
+Se ejecuta la funcion crear_usuarios a las  2023-06-25 01:11:53.588293 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-25 01:13:23.344282 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:13:28.582682 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:14:30.333072 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:16:09.766693 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:16:11.742891 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:16:35.691764 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:18:16.232644 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:19:44.191487 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:20:00.342340 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:20:16.501123 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 01:20:31.265602 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:20:33.161078 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:20:52.468068 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:21:00.205168 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:21:56.178029 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:22:01.951790 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:22:23.446073 horas!
+Internal Server Error: /auditorias_e/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 150, in crear_auditorias_e
+    return render(request, "bitacora/auditorias_e/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 574, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 5: 'block'. Looking for one of: endblock.
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:22:35.365796 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:22:54.280554 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:23:32.299482 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 01:23:37.640035 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:23:40.077384 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:23:55.341372 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:24:13.199406 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:24:52.389141 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:25:40.343807 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:26:19.777870 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:26:42.960283 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:27:02.497901 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:31:50.718685 horas!
+Se ejecuta la funcion listar_sesiones a las  2023-06-25 01:35:09.149596 horas!
+Se ejecuta la funcion crear_sesiones a las  2023-06-25 01:35:11.014182 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-25 01:54:47.452581 horas!
+Se ejecuta la funcion crear_departamentos a las  2023-06-25 01:55:40.286228 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_departamentos a las  2023-06-25 01:55:41.620154 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 01:55:45.215295 horas!
+Se ejecuta la funcion listar_auditorias_s a las  2023-06-25 01:55:47.921208 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 01:55:49.623420 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:56:00.636152 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 01:58:16.651645 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 02:00:55.090775 horas!
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 02:01:12.661760 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 02:01:23.083113 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 02:01:39.213047 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_auditorias_e a las  2023-06-25 02:01:50.227175 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 02:07:11.809107 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_usuarios a las  2023-06-25 02:07:18.003413 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 02:07:24.031858 horas!
+Se ejecuta la funcion listar_departamentos a las  2023-06-25 02:07:25.947845 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 02:07:26.899090 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-25 02:07:27.968889 horas!
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-25 02:07:29.419559 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-25 02:07:32.559503 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 02:07:35.523565 horas!
+Se ejecuta la funcion listar_auditorias_e a las  2023-06-25 02:07:36.715534 horas!
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /almacen/img/warehouse.png
+Not Found: /almacen/img/registro.png
+Not Found: /almacen/img/note.png
+Not Found: /almacen/{% static 'imagenes/warehouse.png' %
+Not Found: /almacen/{% static 'imagenes/registro.png' %
+Not Found: /almacen/{% static 'imagenes/note.png' %
+Not Found: /almacen/{% static 'imagenes/registro.png' %
+Not Found: /almacen/{% static 'imagenes/warehouse.png' %
+Not Found: /almacen/{% static 'imagenes/note.png' %
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 561, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 91: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 561, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 91: 'static'. Did you forget to register or load this tag?
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 561, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 91: 'static'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 561, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 91: 'static'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 22, in inicio
+    return render(request, "bitacora/inicio/Index.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 526, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'bitacora/base/base.html'> must be the first tag in the template.
+Not Found: /favicon.ico
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 22, in inicio
+    return render(request, "bitacora/inicio/Index.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 526, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'bitacora/base/base.html'> must be the first tag in the template.
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Internal Server Error: /almacen/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1065, in almacen_inicio
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Not Found: /almacen/{% static 'imagenes/warehouse.png' %
+Not Found: /apple-touch-icon.png
+Not Found: /almacen/{% static 'bitacora/imagenes/warehouse.png' %
+Not Found: /almacen/{% static 'bitacora/imagenes/warehouse.png' %
+Not Found: /almacen/{% static '/imagenes/warehouse.png' %
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Not Found: /almacen/{% static '/imagenes/warehouse.png' %
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Not Found: /almacen/{% static 'imagenes/warehouse.png' %
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Not Found: /favicon-32x32.png
+Not Found: /almacen/NuevoSeguiminento.html
+Not Found: /favicon.ico
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /almacen/FormNvoMatPeligroso.html
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:09:13.403798 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:11:01.385456 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:11:08.513152 horas!
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:11:28.598697 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:12:53.444488 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:13:10.098035 horas!
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:13:12.045026 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:13:12.460137 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:13:18.873793 horas!
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:14:04.952091 horas!
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:14:08.059086 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:14:16.329733 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:14:28.545318 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 12:14:28.767380 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:15:25.294019 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:15:53.261462 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 12:15:54.207700 horas!
+Not Found: /cat_mat_peligroso/imagenes/Fuu_xP4X0AE9SXK.png
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:17:49.578446 horas!
+Not Found: /favicon-32x32.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:17:58.392292 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 12:17:58.627455 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:19:03.994867 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:19:09.777954 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:19:14.306348 horas!
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:19:22.626545 horas!
+Categoria material peligroso ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 12:19:26.418607 horas!
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 12:19:29.055271 horas!
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 12:19:43.440959 horas!
+Not Found: /almacen/NuevoSeguiminento.html
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-25 13:02:34.042358 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-25 13:02:36.689007 horas!
+Internal Server Error: /reg_almacen/crear
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 530, in crear_reg_almacen
+    return render(request, "bitacora/reg_almacen/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    parser.invalid_block_tag(endblock, 'endblock', acceptable_endblocks)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 40: 'endblock', expected 'endblock' or 'endblock content'. Did you forget to register or load this tag?
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-25 13:02:56.279756 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-25 13:03:14.951063 horas!
+Reg Almacen ha sido creado de manera exitosa.
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-25 13:03:15.324153 horas!
+Not Found: /almacen/AlmacenUno.html
+Se ejecuta la funcion listar_u_sub_producto a las  2023-06-25 13:04:13.822073 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 13:10:18.866953 horas!
+Se ejecuta la funcion listar_u_producto a las  2023-06-25 13:10:31.262542 horas!
+Se ejecuta la funcion listar_cat_mat_peligroso a las  2023-06-25 13:10:36.030274 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-25 13:12:41.492234 horas!
+Not Found: /registro_almacen/AlmacenDos.html
+Not Found: /regalmacen/creaar
+Not Found: /regalmacen/crear
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 13:23:19.611081 horas!
+Se ejecuta la funcion listar_reg_almacen a las  2023-06-25 13:23:22.208063 horas!
+Se ejecuta la funcion crear_reg_almacen a las  2023-06-25 13:23:24.103743 horas!
+Not Found: /registro_almacen/AlmacenDos.html
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1078, in registro_almacen2
+    form = request.session["form"]
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'form'
+Not Found: /favicon.ico
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1078, in registro_almacen2
+    formulario_anterior = request.session["form"]
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'form'
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1078, in registro_almacen2
+    formulario_anterior = request.session["formulario"]
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'formulario'
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1080, in registro_almacen2
+    formulario_anterior = request.session["formulario"]
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'formulario'
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon-32x32.png
+Not Found: /apple-touch-icon.png
+Se desea iniciar sesion.
+Se desea iniciar sesion.
+Not Found: /almacen/AlmacenUno.html
+Not Found: /favicon.ico
+Not Found: /almacen/AlmacenUno.html
+Not Found: /apple-touch-icon.png
+Se ejecuta la funcion crear_departamentos a las  2023-06-25 14:42:22.011442 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-25 14:47:28.297582 horas!
+Se ejecuta la funcion visualizar_seguimientos a las  2023-06-25 14:48:26.368321 horas!
+Internal Server Error: /seguimientos/visualizar/2
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 606, in visualizar_seguimientos
+    return render(request, "bitacora/seguimientos/detalle.html", context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\urls\resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_seguimiento' not found. 'listar_seguimiento' is not a valid view function or pattern name.
+Se ejecuta la funcion visualizar_seguimientos a las  2023-06-25 14:48:58.354915 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:49:59.769107 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:50:30.780482 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:51:25.916790 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:51:39.321576 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:52:47.994664 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:53:04.451505 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:53:14.441677 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:53:15.809554 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:54:09.024257 horas!
+Se han generado errores de validacion
+Se ejecuta la funcion listar_seguimientos a las  2023-06-25 14:56:15.422670 horas!
+Se ejecuta la funcion listar_usuarios a las  2023-06-25 14:58:56.997602 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-25 14:59:03.762161 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:59:07.067477 horas!
+Se ejecuta la funcion crear_seguimientos a las  2023-06-25 14:59:30.815317 horas!
+Ha ocurrido un error inesperado.'SeguimientosForm' object has no attribute 'fecha_recibo'
+Se ejecuta la funcion listar_seguimientos a las  2023-06-25 15:01:05.677991 horas!
+Se ejecuta la funcion visualizar_seguimientos a las  2023-06-25 15:01:11.342166 horas!
+Se ejecuta la funcion listar_seguimientos a las  2023-06-25 15:01:19.892169 horas!
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view bitacora.views.registro_almacen2 didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /registro_almacen_continuacion/
+Traceback (most recent call last):
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\bitacora\views.py", line 1102, in registro_almacen2
+    return render(request, "bitacora/almacen/AlmacenDos.html",context)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Bruno\Desktop\Proyectos 2022\proyecto_trazabilidad\venv\lib\site-packages\django\template\base.py", line 475, in parse
+    raise self.error(token, 'Empty variable tag on line %d' % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 11
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /almacen/NuevoSeguiminento.html
+Not Found: /favicon.ico
+Se ejecuta la funcion crear_cat_mat_peligroso a las  2023-06-25 18:11:37.584265 horas!
+Not Found: /almacen/NuevoSeguiminento.html

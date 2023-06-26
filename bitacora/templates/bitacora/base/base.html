@@ -1,6 +1,4 @@
-
-
-
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +53,15 @@
             <a class="nav-link" href="{% url 'inicio' %}">Inicio</a>
           </li>
           {% if 'sesion_usuario' in request.session %}
+              <li class="nav-item">
+            <a class="nav-link" href="{% url 'reg_seguimiento' %}">Seguimientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'almacen_inicio' %}">Almacen</a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link" href="{% url 'listar_usuarios' %}">Panel administracion</a>
+          </li>
            <li class="nav-item">
             <a class="nav-link" href="{% url 'inicio' %}">Bienvenido {{ request.session.sesion_usuario }}</a>
           </li>

@@ -9,6 +9,9 @@ import logging
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,authenticate,logout
 from django.core.files.storage import FileSystemStorage
+from qrcode import *
+import time
+from django.conf import settings
 
 
 logger = logging.getLogger(__name__)
@@ -38,6 +41,9 @@ def acerca(request):
     if request.method == 'GET':
             return render(request, "bitacora/inicio/AcercaDe.html", context)
 
+
+def admin(request):
+    pass
 
 
 
@@ -208,7 +214,9 @@ def visualizar_u_producto(request, id):
     context ={}
     context["titulo"] = "U_Productos"
     context["accion"] = "Visualizacion"
+    obj = get_object_or_404(UProducto, id = id)
     context["data"] = UProducto.objects.get(id = id)
+    context["form"] = UProductoForm(request.POST or None,instance=obj)
     return render(request, "bitacora/u_producto/detalle.html", context)
 @login_required(login_url='login')
 def crear_u_producto(request):
@@ -219,7 +227,7 @@ def crear_u_producto(request):
     form = UProductoForm(request.POST or None)
     if request.method == 'GET':
         context['form']= form
-        return render(request, "bitacora/u_productos/detalle.html", context)
+        return render(request, "bitacora/u_producto/detalle.html", context)
     elif request.method == 'POST':
         try:
             if form.is_valid():
@@ -230,7 +238,7 @@ def crear_u_producto(request):
             else:
                 logger.warning('Se generaron errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
-                return render(request, "bitacora/u_productos/detalle.html", {'context':context,'form':form})
+                return render(request, "bitacora/u_producto/detalle.html", {'context':context,'form':form})
         except:
             logger.warning('Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
@@ -241,10 +249,15 @@ def eliminar_u_producto(request, id):
     context ={}
     context["titulo"] = "U_Productos"
     obj = get_object_or_404(UProducto, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         messages.success(request, f'Producto {id} eliminada de manera exitosa.')
-        return HttpResponseRedirect("listar_u_producto")
+        logger.warning(f'U Producto {id} eliminado de manera exitosa.')
+        messages.success(request, f'U Producto {id} eliminado de manera exitosa.')
+        return redirect("listar_u_producto")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'El U_Produto {id} no se pudo eliminarse..')
     return render(request, "bitacora/u_producto/listar.html", context)
 
 @login_required(login_url='login')
@@ -256,19 +269,20 @@ def actualizar_u_producto(request, id):
     obj = get_object_or_404(UProducto, id = id)
     form = UProductoForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
-        return render(request, "bitacora/u_productos/detalle.html", context)
+        return render(request, "bitacora/u_producto/detalle.html", context)
     elif request.method == 'POST':
         try:
             if form.is_valid():
                 form.save()
                 logger.warning(f'El producto {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'El producto {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("listar_u_producto")
+                return redirect("listar_u_producto")
             else:
                 logger.warning(f'Se generaron errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
-                return render(request, "bitacora/u_productos/detalle.html", {'context':context,'form':form})
+                return render(request, "bitacora/u_producto/detalle.html", {'context':context,'form':form})
         except:
             logger.warning(f'Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
@@ -332,7 +346,6 @@ def eliminar_u_sub_producto(request, id):
         messages.success(request, f'El U_Sub_Produto {id} no se pudo eliminarse..')
     return render(request, "bitacora/u_sub_producto/listar.html", context)
 
-    return render(request, "bitacora/u_sub_producto/listar.html", context)
 @login_required(login_url='login')
 def actualizar_u_sub_producto(request, id):
     logger.warning('Se ejecuta la funcion actualizar_u_sub_producto a las  '+str(datetime.datetime.now())+' horas!')
@@ -410,21 +423,13 @@ def crear_cat_mat_peligroso(request):
         return render(request, "bitacora/cat_mat_peligroso/detalle.html", context)
     elif request.method == 'POST':
         try:
+            form = CatMatPeligrosoForm(request.POST, request.FILES)
             if form.is_valid():
-                cat_mat_categoria_temporal = form.save(commit=False)
-
-                if request.FILES.get('ficha_seguridad') is not None:
-                    myfile = request.FILES.get('ficha_seguridad')
-                    fs = FileSystemStorage()
-                    filename = fs.save(myfile.name, myfile)
-                    uploaded_file_url = fs.url(filename)
-                    cat_mat_categoria_temporal.ficha_seguridad = uploaded_file_url
-                cat_mat_categoria_temporal.save()
+                form.save()
                 logger.warning('Categoria material peligroso ha sido creado de manera exitosa.')
                 messages.success(request, 'Categoria material peligroso ha sido creado de manera exitosa.')
                 return redirect('listar_cat_mat_peligroso')
             else:
-                print("Si es valida 5")
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
                 return render(request, "bitacora/cat_mat_peligroso/detalle.html", {'context':context,'form':form})
@@ -499,7 +504,6 @@ def actualizar_cat_mat_peligroso(request, id):
 @login_required(login_url='login')
 def listar_reg_almacen(request):
     logger.warning('Se ejecuta la funcion listar_reg_almacen a las  '+str(datetime.datetime.now())+' horas!')
-
     context ={}
     context["titulo"] = "RegAlmacen"
     context["dataset"] = RegAlmacen.objects.all()
@@ -510,9 +514,10 @@ def visualizar_reg_almacen(request, id):
     context ={}
     context["titulo"] = "RegAlmacen"
     context["accion"] = "Visualizacion"
+    obj = get_object_or_404(RegAlmacen, id = id)
     context["data"] = RegAlmacen.objects.get(id = id)
+    context["form"] = RegAlmacenForm(request.POST or None,instance=obj)
     return render(request, "bitacora/reg_almacen/detalle.html", context)
-
 @login_required(login_url='login')
 def crear_reg_almacen(request):
     logger.warning('Se ejecuta la funcion crear_reg_almacen a las  '+str(datetime.datetime.now())+' horas!')
@@ -529,7 +534,7 @@ def crear_reg_almacen(request):
                 form.save()
                 logger.warning('Reg Almacen ha sido creado de manera exitosa.')
                 messages.success(request, 'Reg Almacen ha sido creado de manera exitosa.')
-                return redirect('cat_mat_peligroso')
+                return redirect('listar_reg_almacen')
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -543,12 +548,15 @@ def eliminar_reg_almacen(request, id):
     context ={}
     context["titulo"] = "RegAlmacen"
     obj = get_object_or_404(RegAlmacen, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         logger.warning(f'Reg Almacen {id} eliminado de manera exitosa.')
         messages.success(request, f'Reg Almacen {id} eliminado de manera exitosa.')
-        return HttpResponseRedirect("/")
-    return render(request, "bitacora/reg_almacen/listar.html", context)
+        return redirect("listar_reg_almacen")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'El Reg_Almacen {id} no  pudo eliminarse..')
+    return render(request, "bitacora/reg_almcen/listar.html", context)
 
 @login_required(login_url='login')
 def actualizar_reg_almacen(request, id):
@@ -556,10 +564,10 @@ def actualizar_reg_almacen(request, id):
     context ={}
     context["titulo"] = "Reg_Almacen"
     context["accion"] = "Actualizacion"
-
     obj = get_object_or_404(RegAlmacen, id = id)
     form = RegAlmacenForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
         return render(request, "bitacora/reg_almacen/detalle.html", context)
     elif request.method == 'POST':
@@ -568,7 +576,7 @@ def actualizar_reg_almacen(request, id):
                 form.save()
                 logger.warning(f'Reg Almacen {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'Reg Almacen {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("reg_almacen")
+                return HttpResponseRedirect("listar_reg_almacen")
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -584,6 +592,7 @@ def listar_seguimientos(request):
     context ={}
     context["titulo"] = "Seguimientos"
     context["dataset"] = Seguimientos.objects.all()
+    context["form"] = SeguimientosForm(request.POST or None)
     return render(request, "bitacora/seguimientos/listar.html", context)
 @login_required(login_url='login')
 def visualizar_seguimientos(request, id):
@@ -592,6 +601,8 @@ def visualizar_seguimientos(request, id):
     context["titulo"] = "Seguimientos"
     context["accion"] = "Visualizacion"
     context["data"] = Seguimientos.objects.get(id = id)
+    obj = get_object_or_404(Seguimientos, id = id)
+    context["form"] = SeguimientosForm(request.POST or None, instance = obj)
     return render(request, "bitacora/seguimientos/detalle.html", context)
 @login_required(login_url='login')
 def crear_seguimientos(request):
@@ -605,31 +616,41 @@ def crear_seguimientos(request):
         return render(request, "bitacora/seguimientos/detalle.html", context)
     elif request.method == 'POST':
         try:
+            print("Llega aca 1")
+            print(form.errors)
             if form.is_valid():
+                img = make("http://127.0.0.1:8000/seguimientos/visualizar/4")
+                img_name = 'qr' + str(time.time()) + '.png'
+                img.save(settings.MEDIA_ROOT + '/qr/' + img_name)
                 form.save()
+                print("Llega aca 3")
                 logger.warning('Seguimiento ha sido creado de manera exitosa.')
                 messages.success(request, 'Seguimiento ha sido creado de manera exitosa.')
-                return redirect('cat_mat_peligroso')
+                return redirect('listar_seguimientos')
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
                 return render(request, "bitacora/seguimientos/detalle.html", {'context':context,'form':form})
-        except:
-            logger.warning('Ha ocurrido un error inesperado.')
+        except Exception as e:
+            logger.warning('Ha ocurrido un error inesperado.'+str(e))
             messages.error(request, 'Ha ocurrido un error inesperado.')
+        return render(request, "bitacora/seguimientos/listar.html", context)
+
 @login_required(login_url='login')
 def eliminar_seguimientos(request, id):
     logger.warning('Se ejecuta la funcion eliminar_seguimientos a las  '+str(datetime.datetime.now())+' horas!')
     context ={}
     context["titulo"] = "Seguimientos"
     context["accion"] = "Eliminacion"
-
     obj = get_object_or_404(Seguimientos, id = id)
-    if request.method =="POST":
+    try:
         obj.delete()
         logger.warning(f'Seguimiento {id} eliminado de manera exitosa.')
         messages.success(request, f'Seguimiento {id} eliminado de manera exitosa.')
-        return HttpResponseRedirect("/")
+        return redirect("listar_seguimientos")
+    except:
+        logger.warning(f'No se pudo eliminar.')
+        messages.success(request, f'El departamento {id} no se pudo eliminarse..')
     return render(request, "bitacora/seguimientos/listar.html", context)
 @login_required(login_url='login')
 def actualizar_seguimientos(request, id):
@@ -641,6 +662,7 @@ def actualizar_seguimientos(request, id):
     obj = get_object_or_404(Seguimientos, id = id)
     form = SeguimientosForm(request.POST or None, instance = obj)
     if request.method == 'GET':
+        context["obj"] = obj
         context["form"] = form
         return render(request, "bitacora/seguimientos/detalle.html", context)
     elif request.method == 'POST':
@@ -649,7 +671,7 @@ def actualizar_seguimientos(request, id):
                 form.save()
                 logger.warning(f'Seguimiento {id} ha sido actualizado de manera exitosa.')
                 messages.success(request, f'Seguimiento {id} ha sido actualizado de manera exitosa.')
-                return HttpResponseRedirect("reg_almacen")
+                return redirect("listar_seguimientos")
             else:
                 logger.warning('Se han generado errores de validacion')
                 messages.error(request, 'Porfavor corrige los errores:')
@@ -674,7 +696,6 @@ def visualizar_departamentos(request, id):
     context["data"] = Departamentos.objects.get(id = id)
     obj = get_object_or_404(Departamentos, id = id)
     context["form"] = DepartamentosForm(request.POST or None, instance = obj)
-
     return render(request, "bitacora/departamentos/detalle.html", context)
 
 @login_required(login_url='login')
@@ -683,7 +704,6 @@ def crear_departamentos(request):
     context ={}
     context["titulo"] = "Departamentos"
     context["accion"] = "Creacion"
-
     form = DepartamentosForm(request.POST or None)
     if request.method == 'GET':
         context['form']= form
@@ -702,11 +722,15 @@ def crear_departamentos(request):
         except:
             logger.warning('Ha ocurrido un error inesperado.')
             messages.error(request, 'Ha ocurrido un error inesperado.')
+        return render(request, "bitacora/departamentos/listar.html", context)
+
 @login_required(login_url='login')
 def eliminar_departamentos(request, id):
     logger.warning('Se ejecuta la funcion eliminar_departamentos a las  '+str(datetime.datetime.now())+' horas!')
     context ={}
     context["titulo"] = "Departamentos"
+    context["accion"] = "Eliminacion"
+
     obj = get_object_or_404(Departamentos, id = id)
     try:
         obj.delete()
@@ -1039,3 +1063,71 @@ def registrarse(request):
     form = RegistroForm()
     context={'form' : form}
     return render(request, "bitacora/registro/registro.html", context)
+@login_required(login_url='login')
+def almacen_inicio(request):
+    return render(request, "bitacora/almacen/PrincipalAlmacen.html")
+@login_required(login_url='login')
+def registro_almacen(request):
+    context ={}
+    context["dataset"] = RegAlmacen.objects.all()
+
+    if request.method == 'GET':
+        form = NuevoRegAlmacenForm()
+        context['form']= form
+        return render(request, "bitacora/almacen/AlmacenUno.html", context)
+    if request.method == 'POST':
+        form = NuevoRegAlmacenForm(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect(request, "bitacora/almacen/AlmacenDos.html", {'formulario': form})
+    return render(request, "bitacora/almacen/AlmacenUno.html",context)
+@login_required(login_url='login')
+def registro_almacen2(request):
+    context ={}
+    context['factura'] = request.GET.get('factura', None)
+    context['lote'] = request.GET.get('lote', None)
+    context['proveedor'] = request.GET.get('proveedor', None)
+    context['fecha_llegada'] = request.GET.get('fecha_llegada', None)
+    if request.method == 'POST':
+        context['factura'] = request.POST.get('factura', None)
+        context['lote'] = request.POST.get('lote', None)
+        context['proveedor'] = request.POST.get('proveedor', None)
+        context['fecha_llegada'] = request.POST.get('fecha_llegada', None)
+
+
+        context['producto'] = request.POST.get('producto', None)
+        context['tipo'] = request.POST.get('tipo', None)
+        context['unidad'] = request.POST.get('unidad', None)
+        context['cantidad'] = request.POST.get('cantidad', None)
+        context['fecha'] = request.POST.get('fecha', None)
+        context['descripcion'] = request.POST.get('descripcion', None)
+        print(context)
+
+    return render(request, "bitacora/almacen/AlmacenDos.html",context)
+
+def reg_seguimiento(request):
+    return render(request, "bitacora/seguimientos/NuevoSeguiminento.html")
+def reg_nuevo_material(request):
+    logger.warning('Se ejecuta la funcion crear_cat_mat_peligroso a las  '+str(datetime.datetime.now())+' horas!')
+    context ={}
+    context["titulo"] = "Cat_Mat_Peligroso"
+    context["accion"] = "Creacion"
+    form = CatMatPeligrosoForm(request.POST or None)
+    if request.method == 'GET':
+        context['form']= form
+        return render(request, "bitacora/almacen/RegMateriales.html", context)
+    elif request.method == 'POST':
+        try:
+            form = CatMatPeligrosoForm(request.POST, request.FILES)
+            if form.is_valid():
+                form.save()
+                logger.warning('Categoria material peligroso ha sido creado de manera exitosa.')
+                messages.success(request, 'Categoria material peligroso ha sido creado de manera exitosa.')
+                return redirect('almacen_inicio')
+            else:
+                logger.warning('Se han generado errores de validacion')
+                messages.error(request, 'Porfavor corrige los errores:')
+                return render(request, "bitacora/almacen/RegMateriales.html", {'context':context,'form':form})
+        except:
+            logger.warning('Ha ocurrido un error inesperado.')
+            messages.error(request, 'Ha ocurrido un error inesperado.')
+    return render(request, "bitacora/almacen/RegMateriales.html")
